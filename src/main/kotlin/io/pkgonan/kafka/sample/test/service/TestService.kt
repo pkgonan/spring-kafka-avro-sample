@@ -11,7 +11,7 @@ class TestService {
     companion object : KLogging()
 
     // Fixme : Change Topic
-    // Fixme : Change Key & Value of ConsumerRecord<Any, Any>
+    // Fixme : Change Key & Value of ConsumerRecord<Any, Any> -> ConsumerRecord<Key, Envelope>
     @KafkaListener(topics = ["test-topic"])
     fun handle(record: ConsumerRecord<Any, Any>) {
         logger.info { "Record : $record" }

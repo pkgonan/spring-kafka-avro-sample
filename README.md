@@ -3,14 +3,25 @@
     - Avro
 
 ## How to use ?
-- First, change schema registry url
-```
-  gradle build
-  ```
+- First, Change topic name
+    ```
+      @KafkaListener(topics = ["test-topic"])
+    ```
+    ```
+      subject("test-topic", "src/main/avro")
+      subject("test-topic", "src/main/avro")
+    ```
+- Second, Change schema registry url
+    ```
+      url.set("http://localhost:8081")
+    ```
 
-- First, download schema & generate java code
-```
-  gradle build
-  ```
+- Third, Download schema and generate java code using gradle build
+    ```
+      gradle build
+    ```
 
-- Second, 
+- Fourth, Change ConsumerRecord key & value class to generated java class
+    ```
+      fun handle(record: ConsumerRecord<Any, Any>)
+    ```
