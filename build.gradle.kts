@@ -56,6 +56,7 @@ schemaRegistry {
 }
 
 avro {
+    stringType.set("String")
     isCreateSetters.set(false)
     fieldVisibility.set("PRIVATE")
     outputCharacterEncoding.set("UTF-8")
