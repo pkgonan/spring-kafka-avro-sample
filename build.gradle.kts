@@ -30,8 +30,6 @@ dependencies {
     implementation("org.apache.avro:avro:1.10.0")
     implementation("io.confluent:kafka-avro-serializer:5.5.1")
 
-    implementation("io.github.microutils:kotlin-logging:2.0.3")
-
     implementation("com.fasterxml.jackson.module:jackson-module-kotlin:2.11.3")
     implementation("com.fasterxml.jackson.datatype:jackson-datatype-jdk8:2.11.3")
     implementation("com.fasterxml.jackson.datatype:jackson-datatype-jsr310:2.11.3")
