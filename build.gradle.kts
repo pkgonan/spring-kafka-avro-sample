@@ -55,11 +55,13 @@ schemaRegistry {
     }
 }
 
+// Reference : https://github.com/davidmc24/gradle-avro-plugin
 avro {
     stringType.set("String")
     isCreateSetters.set(false)
     fieldVisibility.set("PRIVATE")
     outputCharacterEncoding.set("UTF-8")
+    isEnableDecimalLogicalType.set(true)
 }
 
 val downloadSchema = tasks.withType<com.github.imflog.schema.registry.download.DownloadTask> {
