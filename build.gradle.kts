@@ -50,8 +50,8 @@ schemaRegistry {
 
     download {
         // Fixme : Change Topic
-        subject("test-topic", "src/main/avro")
-        subject("test-topic", "src/main/avro")
+        subject("test-topic-key", "src/main/avro")
+        subject("test-topic-value", "src/main/avro")
     }
 }
 
