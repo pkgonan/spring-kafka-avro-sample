@@ -12,17 +12,24 @@
     subject("test-topic-value", "src/main/avro")
     ```
 
-- Second, Change schema registry url
+- Second, Change fixme keyword at application.yml
+    ```
+    bootstrap-servers: fixme
+
+    schema.registry.url: fixme
+    ```
+
+- Third, Change schema registry url
     ```
     url.set("http://localhost:8081")
     ```
 
-- Third, Download schema and generate java code using gradle build
+- Fourth, Download schema and generate java code using gradle build
     ```
     gradle build
     ```
 
-- Fourth, Change ConsumerRecord key & value class to generated java class
+- Fifth, Change ConsumerRecord key & value class to generated java class
     ```
     fun handle(record: ConsumerRecord<Any, Any>)
     ```
