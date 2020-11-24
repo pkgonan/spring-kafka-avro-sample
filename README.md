@@ -16,7 +16,7 @@
     ```
     bootstrap-servers: fixme
 
-    schema.registry.url: fixme
+    schema.registry.url: http://localhost:8081
     ```
 
 - Third, Change schema registry url

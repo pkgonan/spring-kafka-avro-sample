@@ -5,12 +5,12 @@ spring:
       key-serializer: io.confluent.kafka.serializers.KafkaAvroSerializer
       value-serializer: io.confluent.kafka.serializers.KafkaAvroSerializer
       properties:
-        schema.registry.url: fixme
+        schema.registry.url: http://localhost:8081
     consumer:
       group-id: spring-kafka-gradle-sample
       key-deserializer: io.confluent.kafka.serializers.KafkaAvroDeserializer
       value-deserializer: io.confluent.kafka.serializers.KafkaAvroDeserializer
       properties:
-        schema.registry.url: fixme
+        schema.registry.url: http://localhost:8081
         specific.avro.reader: true          # SpecificRecord 사용시에 true
         spring.json.trusted.packages: "*"
